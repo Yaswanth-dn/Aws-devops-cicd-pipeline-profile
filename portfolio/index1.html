@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Yaswanth Narasimha Dasari</h1>
+
+          <p class="title">Cloud Engineer | DevOps Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:yaswanthd14@gmail.com" class="contact-link">yaswanthd14@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+12133522795" class="contact-link">+91 7989646022</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">March 06, 2002</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Madhapur, Hyderabad, Telangana</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+<!--
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+-->
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm a Cloud Engineer with experience in Azure cloud operations, incident management, troubleshooting, and
+            infrastructure monitoring. I work with Azure Compute, Storage, Networking, and KQL for diagnostics and issue resolution.
+          </p>
+
+          <p>
+            I'm expanding my skills in Docker, Kubernetes, Terraform, GitHub Actions, and CI/CD to build automated and scalable cloud infrastructure.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Cloud Infrastructure</h4>
+
+                <p class="service-item-text">
+                  Designing and managing reliable cloud infrastructure using Microsoft Azure.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Devops&CI/CD</h4>
+
+                <p class="service-item-text">
+                  Learning to automate application build, test and deployment workflows using GitHub Actions.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Containerization</h4>
+
+                <p class="service-item-text">
+                  Packing applications with Docker and Learning container orchestration with Kubernetes.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Infrastructure as Code</h4>
+
+                <p class="service-item-text">
+                  Provisioning and managing cloud infrastructure using Terraform.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+        
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Sree Vidyanikethan Engineering College</h4>
+
+              <span>2019 — 2023</span>
+
+              <p class="timeline-text">
+                Bachelor of Technology (B.Tech) in Electronics and Communication Engineering
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Narayana Junior College</h4>
+
+              <span>2017 — 2019</span>
+
+              <p class="timeline-text">
+                Intermediate (MPC - Mathematics, Physics, and Chemistry).
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Narayana High School</h4>
+
+              <span>2016 — 2017</span>
+
+              <p class="timeline-text">
+                SSC (10th Class)
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Cloud Engineer - LTM</h4>
+
+              <span>2024 — 2025</span>
+
+                <h4 class= "h4">Project 1: Windows Azure Operation Center </h4>
+
+                <ul class="timeline-bullet-list">
+                
+                <li>Managed and troubleshooted Azure cloud infrastructure, focusing on core services such as Compute, Storage, and Networking.</li>
+
+                
+                <li>Performed incident management, packet capture analysis, and service healing to ensure high availability and reliability.</li>
+
+                
+                <li>Utilized tools include ASC, Azure Service Insights (ASI), Kusto Query Language (KQL), ORB, DFM, Xportal, Jarvis, and Netvma for diagnostics and 
+root cause analysis.</li>
+
+                
+                <li>Automated operational tasks using Ansible and scripting languages such as 
+MySQL and KQL.</li>
+
+                
+                <li>Successfully met defined SLAs and contributed to minimizing downtime 
+through proactive monitoring and response</li>
+            </ul>
+              <span>2025 — present</span>
+
+                <h4 class= "h4">Project 2: Azure Capacity Customer Experience </h4>
+
+                <ul class="timeline-bullet-list">
+                
+                <li>Process Azure quota increase and decrease requests, region access requests, and SKU availability-related requests received through Azure DevOps (ADO) work items and email.</li>
+
+                
+                <li>Validate customer subscription details, offer types (Paid External, Non-Paid, and Internal), requested regions, and SKU eligibility before processing capacity requests.</li>
+
+                
+                <li>Verify existing quota limits, current utilization, and available capacity using internal tools such as Jarvis to determine request eligibility.</li>
+
+                
+                <li>Assess Azure SKU availability and regional access for services including Azure SQL Database, SQL Data Warehouse, Azure Batch, Azure Machine Learning, Azure Cosmos DB, Azure App Service, Azure Database for MySQL, Azure Database for PostgreSQL, HDInsight, Managed DevOps, and RDQuota.</li>
+                
+                <li>Evaluate special, specialty, and previous-generation SKUs using internal FTM documentation and service-specific regional quota and availability guidelines.</li>
+
+                <li>Approve and fulfill eligible quota and region access requests directly through Jarvis, following established service policies and capacity thresholds.</li>
+                <li>Escalate requests exceeding defined capacity thresholds or requiring additional validation to the appropriate higher-level teams.</li>
+                <li>Review existing quota configurations and request details to ensure accurate processing and avoid incorrect quota modifications.</li>
+                <li>Manage request queues, maintain processing accuracy, and consistently meet defined Service Level Agreements (SLAs).</li>
+            </ul>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          
+  <div class="content-card">
+
+  <h4 class="h4">Azure Cloud &amp; Capacity Management</h4>
+  <ul>
+    <li>Good understanding of Azure cloud infrastructure, subscriptions, resource providers, regions, and deployment requirements.</li>
+    <li>Experience reviewing quota requests by validating requested vCPU cores, current limits, usage, and available quota.</li>
+    <li>Analyze VM SKU availability in the requested Azure region and verify customer region access before assessing deployment feasibility.</li>
+    <li>Review capacity-related support tickets, identify quota or SKU constraints, and determine whether quota increases or alternative SKUs may be required.</li>
+    <li>Understand scaling requirements by evaluating available quota, current resource consumption, and requested compute capacity.</li>
+  </ul>
+
+  <h4 class="h4">Containers &amp; Orchestration</h4>
+  <ul>
+    <li>Docker: Build images, write Dockerfiles, run containers, configure port mappings, networks, volumes, and Docker Compose services.</li>
+    <li>Kubernetes: Understand Pods, Deployments, ReplicaSets, Services, ConfigMaps, and rolling updates.</li>
+    <li>Understand how containerized applications are deployed, exposed, scaled, and troubleshot.</li>
+  </ul>
+
+  <h4 class="h4">Operating Systems &amp; Query Languages</h4>
+  <ul>
+    <li>Linux: File permissions, process management, users, services, logs, networking, and command-line troubleshooting.</li>
+    <li>KQL: Query log and telemetry data to investigate incidents, analyze resource behavior, and support diagnostics.</li>
+    <li>MySQL: Basic SQL queries and database concepts, if applicable to your experience.</li>
+  </ul>
+
+  <h4 class="h4">Automation &amp; Version Control</h4>
+  <ul>
+    <li>Ansible: Understand inventories, playbooks, modules, variables, and roles for configuration management.</li>
+    <li>Git and GitHub: Manage repositories, branches, commits, pushes, pull requests, and merge conflicts.</li>
+    <li>GitHub Actions: Understand CI/CD workflows, automated build and test stages, and deployment pipelines.</li>
+    <li>Terraform: Understand providers, resources, variables, outputs, state, and Infrastructure as Code fundamentals.</li>
+  </ul>
+
+  <h4 class="h4">Monitoring &amp; Troubleshooting</h4>
+  <ul>
+    <li>Azure Data Explorer (Kusto) and Azure Service Insights (ASI) for diagnostics and investigation, based on project usage.</li>
+    <li>Analyze logs, error details, resource utilization, and deployment failures to help identify potential root causes.</li>
+    <li>Follow incident and ticket workflows, document findings, and coordinate with relevant teams for resolution.</li>
+  </ul>
+
+</div>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Portfolio project</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Docker & Kubernetes Deployment</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Automated CI/CD Pipeline</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Portfolio project</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Docker & Kubernetes Deployment</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Automated CI/CD Pipeline</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+
+            <li class="project-item active" data-filter-item data-category="automated ci/cd pipeline">
+  <a href="#">
+
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+
+      <img src="./assets/images/project-10.png"
+           alt="AWS DevOps CI CD Pipeline"
+           loading="lazy">
+    </figure>
+
+    <h3 class="project-title">AWS DevOps CI/CD Pipeline</h3>
+
+    <p class="project-category">Cloud & DevOps</p>
+
+  </a>
+</li>
+
+<!-- Project 1 -->
+<li class="project-item active" data-filter-item
+    data-category="portfolio project">
+
+  <a href="https://github.com/Yaswanth-dn/Aws-devops-cicd-pipeline-profile" target="_blank" rel="noopener noreferrer">
+
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+
+      <img src="./assets/images/project-10.png"
+           alt="Personal Portfolio Website Deployment"
+           loading="lazy">
+    </figure>
+
+    <h3 class="project-title">
+      Personal Portfolio Website Deployment
+    </h3>
+
+    <p class="project-category">Cloud & DevOps</p>
+
+  </a>
+</li>
+
+<!-- Project 2 -->
+<li class="project-item active" data-filter-item
+    data-category="docker & kubernetes deployment">
+
+  <a href="#">
+
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+
+      <img src="./assets/images/project-10.png"
+           alt="Docker and Kubernetes Deployment"
+           loading="lazy">
+    </figure>
+
+    <h3 class="project-title">
+      Docker & Kubernetes Deployment
+    </h3>
+
+    <p class="project-category">Cloud & DevOps</p>
+
+  </a>
+</li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+    -->
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+  src="https://www.google.com/maps?q=Anupama+Coliving+Hostel,+Road+No.+18,+Ayyappa+Society,+Madhapur,+Hyderabad&output=embed"
+  width="400"
+  height="300"
+  loading="lazy">
+</iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="https://formsubmit.co/yaswanthdn@gmail.com" method="POST" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
